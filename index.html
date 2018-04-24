@@ -39,10 +39,6 @@
       opacity: .2;
     }
 
-    .slick-active {
-      opacity: .5;
-    }
-
     .slick-current {
       opacity: 1;
     }
@@ -363,8 +359,9 @@
         variableWidth: true
       });
       $(".lazy").slick({
+        dots: true,
         lazyLoad: 'ondemand', // ondemand progressive anticipated
-        infinite: true
+        infinite: true,
       });
     });
 </script>
